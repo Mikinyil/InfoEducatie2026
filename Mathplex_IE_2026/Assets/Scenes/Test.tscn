@@ -1,0 +1,389 @@
+[gd_scene format=3 uid="uid://dxi1ism2rber6"]
+
+[ext_resource type="Script" uid="uid://b5grrexfrk1ck" path="res://Assets/Scripts/MAIN.gd" id="1_otyre"]
+[ext_resource type="Texture2D" uid="uid://5j2mx13r33f0" path="res://Assets/Images/Title.png" id="2_dufu2"]
+[ext_resource type="Texture2D" uid="uid://dgq0654hcf0tg" path="res://Assets/Images/Background.jpg" id="2_y8kbp"]
+[ext_resource type="FontFile" uid="uid://b34dyndevdd1o" path="res://Assets/Fonts/minecraft_font.ttf" id="3_etuvg"]
+[ext_resource type="Texture2D" uid="uid://ykx5cchpi3ek" path="res://Assets/Images/Options.png" id="4_yhb02"]
+[ext_resource type="Texture2D" uid="uid://bwmt4rewf7y24" path="res://Assets/Images/Profile.png" id="6_wadwy"]
+[ext_resource type="Texture2D" uid="uid://b4c087has3e5j" path="res://Assets/Images/Levels.png" id="7_76df3"]
+[ext_resource type="Script" uid="uid://brwm0tbviww7" path="res://Assets/Scenes/progress.gd" id="8_6ny4t"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_76df3"]
+
+[node name="MAIN" type="Control" unique_id=1280955817]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Menu" type="MarginContainer" parent="." unique_id=916756678]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_otyre")
+
+[node name="Background" type="MarginContainer" parent="Menu" unique_id=1242677241]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Menu/Background" unique_id=772777090]
+layout_mode = 2
+texture = ExtResource("2_y8kbp")
+expand_mode = 2
+
+[node name="Start" type="MarginContainer" parent="Menu" unique_id=445397091]
+visible = false
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Menu/Start" unique_id=268328269]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Menu/Start/GridContainer" unique_id=1083266410]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+
+[node name="Label2" type="Label" parent="Menu/Start/GridContainer/GridContainer" unique_id=2026378703]
+layout_mode = 2
+text = "
+
+
+
+"
+
+[node name="TextureRect" type="TextureRect" parent="Menu/Start/GridContainer/GridContainer" unique_id=1393129376]
+clip_contents = true
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+texture = ExtResource("2_dufu2")
+expand_mode = 3
+
+[node name="GridContainer2" type="GridContainer" parent="Menu/Start/GridContainer" unique_id=1274487254]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+
+[node name="Label" type="Label" parent="Menu/Start/GridContainer/GridContainer2" unique_id=1077072779]
+layout_mode = 2
+
+[node name="MenuButton" type="MenuButton" parent="Menu/Start/GridContainer/GridContainer2" unique_id=684149568]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+tooltip_text = "Start..."
+theme_override_fonts/font = ExtResource("3_etuvg")
+toggle_mode = false
+text = "Start"
+flat = false
+
+[node name="Menu" type="MarginContainer" parent="Menu" unique_id=1213467120]
+visible = false
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Menu/Menu" unique_id=677451496]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Menu/Menu/GridContainer" unique_id=742496150]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+
+[node name="Label2" type="Label" parent="Menu/Menu/GridContainer/GridContainer" unique_id=797037155]
+layout_mode = 2
+text = "
+
+
+"
+
+[node name="TextureRect" type="TextureRect" parent="Menu/Menu/GridContainer/GridContainer" unique_id=628626915]
+clip_contents = true
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+texture = ExtResource("2_dufu2")
+expand_mode = 3
+
+[node name="Button" type="GridContainer" parent="Menu/Menu/GridContainer" unique_id=627700983]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+
+[node name="MenuButton2" type="MenuButton" parent="Menu/Menu/GridContainer/Button" unique_id=1682181822]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("3_etuvg")
+toggle_mode = false
+text = "Levels
+"
+flat = false
+
+[node name="MenuButton" type="MenuButton" parent="Menu/Menu/GridContainer/Button" unique_id=690695532]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("3_etuvg")
+toggle_mode = false
+text = "Options
+"
+flat = false
+
+[node name="MenuButton4" type="MenuButton" parent="Menu/Menu/GridContainer/Button" unique_id=717825188]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("3_etuvg")
+toggle_mode = false
+text = "Profile
+"
+flat = false
+
+[node name="MenuButton3" type="MenuButton" parent="Menu/Menu/GridContainer/Button" unique_id=333084810]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("3_etuvg")
+toggle_mode = false
+text = "Exit"
+flat = false
+
+[node name="Options" type="MarginContainer" parent="Menu" unique_id=671001556]
+visible = false
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Menu/Options" unique_id=1529385343]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Menu/Options/GridContainer" unique_id=321201376]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+
+[node name="Label2" type="Label" parent="Menu/Options/GridContainer/GridContainer" unique_id=835443508]
+layout_mode = 2
+text = "
+
+
+"
+
+[node name="TextureRect" type="TextureRect" parent="Menu/Options/GridContainer/GridContainer" unique_id=2027496996]
+clip_contents = true
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+texture = ExtResource("4_yhb02")
+expand_mode = 3
+
+[node name="Button" type="GridContainer" parent="Menu/Options/GridContainer" unique_id=2034650860]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+columns = 2
+
+[node name="CheckButton" type="CheckButton" parent="Menu/Options/GridContainer/Button" unique_id=1523114874]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_etuvg")
+text = "Explanations"
+
+[node name="GridContainer2" type="GridContainer" parent="Menu/Options" unique_id=1358653793]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+columns = 2
+
+[node name="MenuButton" type="MenuButton" parent="Menu/Options/GridContainer2" unique_id=106530860]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_etuvg")
+toggle_mode = false
+text = "Back to menu"
+flat = false
+
+[node name="Label" type="Label" parent="Menu/Options/GridContainer2" unique_id=591119947]
+layout_mode = 2
+text = "              
+"
+
+[node name="Label2" type="Label" parent="Menu/Options/GridContainer2" unique_id=248973353]
+layout_mode = 2
+text = "
+"
+
+[node name="Profile" type="MarginContainer" parent="Menu" unique_id=1545000057]
+visible = false
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Menu/Profile" unique_id=1706939480]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Menu/Profile/GridContainer" unique_id=1448101476]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+
+[node name="Label2" type="Label" parent="Menu/Profile/GridContainer/GridContainer" unique_id=1743884202]
+layout_mode = 2
+text = "
+
+
+"
+
+[node name="TextureRect" type="TextureRect" parent="Menu/Profile/GridContainer/GridContainer" unique_id=1727802617]
+clip_contents = true
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+texture = ExtResource("6_wadwy")
+expand_mode = 3
+
+[node name="Button" type="GridContainer" parent="Menu/Profile/GridContainer" unique_id=984723447]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+columns = 2
+
+[node name="Button" type="Button" parent="Menu/Profile/GridContainer/Button" unique_id=205013012]
+custom_minimum_size = Vector2(175, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_etuvg")
+text = "Profile Picture:"
+
+[node name="TextureRect" type="TextureRect" parent="Menu/Profile/GridContainer/Button" unique_id=84885949]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = SubResource("ImageTexture_76df3")
+expand_mode = 2
+
+[node name="GridContainer2" type="GridContainer" parent="Menu/Profile" unique_id=14915636]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+columns = 2
+
+[node name="MenuButton" type="MenuButton" parent="Menu/Profile/GridContainer2" unique_id=1985687132]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_etuvg")
+toggle_mode = false
+text = "Back to menu"
+flat = false
+
+[node name="Label" type="Label" parent="Menu/Profile/GridContainer2" unique_id=1456074000]
+layout_mode = 2
+text = "              
+"
+
+[node name="Label2" type="Label" parent="Menu/Profile/GridContainer2" unique_id=1100256788]
+layout_mode = 2
+text = "
+"
+
+[node name="Levels" type="MarginContainer" parent="Menu" unique_id=204757566]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Menu/Levels" unique_id=215107547]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Menu/Levels/GridContainer" unique_id=318127823]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+
+[node name="Label2" type="Label" parent="Menu/Levels/GridContainer/GridContainer" unique_id=1245352759]
+layout_mode = 2
+text = "
+
+
+"
+
+[node name="TextureRect" type="TextureRect" parent="Menu/Levels/GridContainer/GridContainer" unique_id=2009049557]
+clip_contents = true
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+texture = ExtResource("7_76df3")
+expand_mode = 3
+
+[node name="Label3" type="Label" parent="Menu/Levels/GridContainer/GridContainer" unique_id=98924493]
+layout_mode = 2
+text = "
+
+
+"
+
+[node name="Button" type="GridContainer" parent="Menu/Levels/GridContainer" unique_id=503303639]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+columns = 2
+
+[node name="Button" type="Button" parent="Menu/Levels/GridContainer/Button" unique_id=961603129]
+custom_minimum_size = Vector2(175, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_etuvg")
+text = "Algebra"
+
+[node name="Button2" type="Button" parent="Menu/Levels/GridContainer/Button" unique_id=1911026387]
+custom_minimum_size = Vector2(175, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_etuvg")
+text = " Mathematic Analysis "
+
+[node name="Progress" type="GridContainer" parent="Menu/Levels/GridContainer" unique_id=158459295]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+script = ExtResource("8_6ny4t")
+
+[node name="ProgressBar" type="ProgressBar" parent="Menu/Levels/GridContainer/Progress" unique_id=1443104527]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_etuvg")
+rounded = true
+
+[node name="Label" type="Label" parent="Menu/Levels/GridContainer/Progress" unique_id=189451060]
+layout_mode = 2
+
+[node name="Timer" type="Timer" parent="Menu/Levels/GridContainer/Progress" unique_id=425515894]
+autostart = true
+
+[node name="GridContainer2" type="GridContainer" parent="Menu/Levels" unique_id=1129583740]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+columns = 2
+
+[node name="MenuButton" type="MenuButton" parent="Menu/Levels/GridContainer2" unique_id=1261362727]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_etuvg")
+toggle_mode = false
+text = "Back to menu"
+flat = false
+
+[node name="Label" type="Label" parent="Menu/Levels/GridContainer2" unique_id=891177099]
+layout_mode = 2
+text = "              
+"
+
+[node name="Label2" type="Label" parent="Menu/Levels/GridContainer2" unique_id=1989379025]
+layout_mode = 2
+text = "
+"
+
+[connection signal="pressed" from="Menu/Start/GridContainer/GridContainer2/MenuButton" to="Menu" method="_on_menu_button_pressed"]
+[connection signal="pressed" from="Menu/Menu/GridContainer/Button/MenuButton2" to="Menu" method="menu_levels"]
+[connection signal="pressed" from="Menu/Menu/GridContainer/Button/MenuButton" to="Menu" method="menu_options"]
+[connection signal="pressed" from="Menu/Menu/GridContainer/Button/MenuButton4" to="Menu" method="menu_profile"]
+[connection signal="pressed" from="Menu/Menu/GridContainer/Button/MenuButton3" to="Menu" method="escape"]
+[connection signal="pressed" from="Menu/Options/GridContainer2/MenuButton" to="Menu" method="back_button"]
+[connection signal="pressed" from="Menu/Profile/GridContainer2/MenuButton" to="Menu" method="back_button"]
+[connection signal="timeout" from="Menu/Levels/GridContainer/Progress/Timer" to="Menu/Levels/GridContainer/Progress" method="_on_timer_timeout"]
+[connection signal="pressed" from="Menu/Levels/GridContainer2/MenuButton" to="Menu" method="back_button"]
