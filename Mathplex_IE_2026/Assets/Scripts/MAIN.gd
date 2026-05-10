@@ -5,9 +5,12 @@ extends MarginContainer
 @onready var options_screen = $Options
 @onready var profile_screen = $Profile
 @onready var levels_screen = $Levels
+@onready var levelselector_screen = $LevelSelector
+@onready var level_screen = $Level
 
 @export var experience = 85
 
+signal answercheck()
 
 func toggle_visibility(object):
 	object.visible = !object.visible
@@ -31,6 +34,8 @@ func _ready() -> void:
 	options_screen.visible = false
 	profile_screen.visible = false
 	levels_screen.visible = false
+	level_screen.visible = false
+	levelselector_screen.visible = false
 
 
 func back_button() -> void:
@@ -39,6 +44,8 @@ func back_button() -> void:
 	options_screen.visible = false
 	profile_screen.visible = false
 	levels_screen.visible = false
+	levelselector_screen.visible = false
+	level_screen.visible = false
 
 
 func menu_profile() -> void:
@@ -49,3 +56,12 @@ func menu_profile() -> void:
 func menu_levels() -> void:
 	toggle_visibility(levels_screen)
 	toggle_visibility(menu_screen)
+
+
+func level_levelselector(extra_arg_0: int) -> void:
+	toggle_visibility(levels_screen)
+	toggle_visibility(levelselector_screen)
+	
+func enterlevel() -> void:
+	toggle_visibility(levelselector_screen)
+	toggle_visibility(level_screen)
