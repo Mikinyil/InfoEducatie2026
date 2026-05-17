@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ddls627kpdxfv"
+path="res://.godot/imported/3. My Castle Town (DELTARUNE Chapter 2 Soundtrack) - Toby Fox.mp3-74e36088b7a924b2edeff162dc58a19f.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/3. My Castle Town (DELTARUNE Chapter 2 Soundtrack) - Toby Fox.mp3"
+dest_files=["res://.godot/imported/3. My Castle Town (DELTARUNE Chapter 2 Soundtrack) - Toby Fox.mp3-74e36088b7a924b2edeff162dc58a19f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
