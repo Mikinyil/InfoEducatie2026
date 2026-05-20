@@ -10,10 +10,10 @@ config_version=5
 
 [application]
 
-config/name="Infoeducatie_test_UID"
+config/name="Mathplex v1.0"
 run/main_scene="uid://dxi1ism2rber6"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="uid://bjciwufixqfpv"
 
 [physics]
 

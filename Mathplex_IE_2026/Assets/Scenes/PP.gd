@@ -46,6 +46,15 @@ func PP_Update(a: int) -> void:
 		texture = load("res://Assets/Images/ProfilePictures/PP3.png")
 	if(a==4):
 		texture = load("res://Assets/Images/ProfilePictures/PP4.png")
+	if(a==5):
+		texture = load("res://Assets/Images/ProfilePictures/PP5.png")
+	if(a==6):
+		texture = load("res://Assets/Images/ProfilePictures/PP6.png")
+	if(a==7):
+		texture = load("res://Assets/Images/ProfilePictures/PP7.png")
+	if(a==8):
+		texture = load("res://Assets/Images/ProfilePictures/PP8.png")
+	PP=a
 	save_data()
 	
 func Username_Update(a: String) -> void:

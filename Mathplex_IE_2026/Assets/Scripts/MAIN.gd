@@ -11,6 +11,7 @@ extends MarginContainer
 @onready var Correct = $Level_Conclusion/Correct
 @onready var Incorrect = $Level_Conclusion/Incorrect
 @onready var PPS = $PP_Selector
+@onready var SS = $SelectScreen
 
 @export var experience = 85
 
@@ -28,7 +29,6 @@ func _on_menu_button_pressed() -> void:
 	toggle_visibility(start_screen)
 	toggle_visibility(menu_screen)
 
-
 func escape() -> void:
 	get_tree().quit()
 
@@ -42,6 +42,7 @@ func _ready() -> void:
 	levelselector_screen.visible = false
 	Conclusion.visible = false
 	PPS.visible = false
+	SS.visible = false
 
 func back_button() -> void:
 	start_screen.visible = false
@@ -51,16 +52,21 @@ func back_button() -> void:
 	levels_screen.visible = false
 	levelselector_screen.visible = false
 	level_screen.visible = false
+	Conclusion.visible = false
+	PPS.visible = false
 
 
 func menu_profile() -> void:
 	toggle_visibility(profile_screen)
 	toggle_visibility(menu_screen)
 
-
-func menu_levels() -> void:
-	toggle_visibility(levels_screen)
+func menu_SS() -> void:
+	toggle_visibility(SS)
 	toggle_visibility(menu_screen)
+
+func SS_levels() -> void:
+	toggle_visibility(levels_screen)
+	toggle_visibility(SS)
 
 
 func level_levelselector() -> void:
