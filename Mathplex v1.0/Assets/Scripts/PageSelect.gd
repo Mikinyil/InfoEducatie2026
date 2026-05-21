@@ -3,7 +3,7 @@ extends GridContainer
 @onready var Left = $Back
 @onready var Right = $Next
 @onready var pathscript = "Menu/Level/LevelType1/GridContainer/Button"
-var page
+var page = 0
 
 func pageselect(a: int) -> void:
 	page = a;
