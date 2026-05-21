@@ -8,23 +8,193 @@ const SAVE_PATH     = "user://Problem_progress.json"
 
 # ──────────────────────────────────────────────────
 const DEFAULT_DATA = {
-	"classes": [
-		{
-			"name": "Math Analysis",
-			"questions": [
-				{"id": 1, "answered_correctly": false},
-				{"id": 2, "answered_correctly": false}
-			]
-		},
-		{
-			"name": "Calculus",
-			"questions": [
-				{"id": 1, "answered_correctly": false},
-				{"id": 2, "answered_correctly": false},
-				{"id": 3, "answered_correctly": false}
-			]
-		}
-	]
+  "classes": [
+    {
+      "name": "Cazuri de nedeterminare",
+      "questions": [
+        {
+          "id": 1,
+          "answered_correctly": false
+        },
+        {
+          "id": 2,
+          "answered_correctly": false
+        },
+        {
+          "id": 3,
+          "answered_correctly": false
+        },
+        {
+          "id": 4,
+          "answered_correctly": false
+        },
+        {
+          "id": 5,
+          "answered_correctly": false
+        },
+        {
+          "id": 6,
+          "answered_correctly": false
+        },
+        {
+          "id": 7,
+          "answered_correctly": false
+        },
+        {
+          "id": 8,
+          "answered_correctly": false
+        }
+      ]
+    },
+    {
+      "name": "Limite remarcabile",
+      "questions": [
+        {
+          "id": 1,
+          "answered_correctly": false
+        },
+        {
+          "id": 2,
+          "answered_correctly": false
+        },
+        {
+          "id": 3,
+          "answered_correctly": false
+        },
+        {
+          "id": 4,
+          "answered_correctly": false
+        },
+        {
+          "id": 5,
+          "answered_correctly": false
+        },
+        {
+          "id": 6,
+          "answered_correctly": false
+        },
+        {
+          "id": 7,
+          "answered_correctly": false
+        },
+        {
+          "id": 8,
+          "answered_correctly": false
+        }
+      ]
+    },
+    {
+      "name": "Calculul nedeterminantilor",
+      "questions": [
+        {
+          "id": 1,
+          "answered_correctly": false
+        },
+        {
+          "id": 2,
+          "answered_correctly": false
+        },
+        {
+          "id": 3,
+          "answered_correctly": false
+        },
+        {
+          "id": 4,
+          "answered_correctly": false
+        },
+        {
+          "id": 5,
+          "answered_correctly": false
+        },
+        {
+          "id": 6,
+          "answered_correctly": false
+        },
+        {
+          "id": 7,
+          "answered_correctly": false
+        },
+        {
+          "id": 8,
+          "answered_correctly": false
+        }
+      ]
+    },
+    {
+      "name": "Sisteme de ecuatii liniare",
+      "questions": [
+        {
+          "id": 1,
+          "answered_correctly": false
+        },
+        {
+          "id": 2,
+          "answered_correctly": false
+        },
+        {
+          "id": 3,
+          "answered_correctly": false
+        },
+        {
+          "id": 4,
+          "answered_correctly": false
+        },
+        {
+          "id": 5,
+          "answered_correctly": false
+        },
+        {
+          "id": 6,
+          "answered_correctly": false
+        },
+        {
+          "id": 7,
+          "answered_correctly": false
+        },
+        {
+          "id": 8,
+          "answered_correctly": false
+        }
+      ]
+    },
+    {
+      "name": "Determinanti",
+      "questions": [
+        {
+          "id": 1,
+          "answered_correctly": false
+        },
+        {
+          "id": 2,
+          "answered_correctly": false
+        },
+        {
+          "id": 3,
+          "answered_correctly": false
+        },
+        {
+          "id": 4,
+          "answered_correctly": false
+        },
+        {
+          "id": 5,
+          "answered_correctly": false
+        },
+        {
+          "id": 6,
+          "answered_correctly": false
+        },
+        {
+          "id": 7,
+          "answered_correctly": false
+        },
+        {
+          "id": 8,
+          "answered_correctly": false
+        }
+      ]
+    }
+  ]
 }
 # ──────────────────────────────────────────────────
 var levels: int = 0
