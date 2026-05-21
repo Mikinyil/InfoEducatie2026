@@ -1,0 +1,1233 @@
+[gd_scene format=3 uid="uid://dxi1ism2rber6"]
+
+[ext_resource type="Script" uid="uid://b5grrexfrk1ck" path="res://Assets/Scripts/MAIN.gd" id="1_q6uf0"]
+[ext_resource type="Script" uid="uid://bdf71a14w5jh2" path="res://Assets/Scripts/Background_Activities.gd" id="2_l6shh"]
+[ext_resource type="Texture2D" uid="uid://dgq0654hcf0tg" path="res://Assets/Images/Background.jpg" id="3_u4agy"]
+[ext_resource type="AudioStream" uid="uid://ddls627kpdxfv" path="res://Assets/Audio/3. My Castle Town (DELTARUNE Chapter 2 Soundtrack) - Toby Fox.mp3" id="4_ibk6m"]
+[ext_resource type="Texture2D" uid="uid://5j2mx13r33f0" path="res://Assets/Images/Title.png" id="5_u3rho"]
+[ext_resource type="FontFile" uid="uid://b34dyndevdd1o" path="res://Assets/Fonts/minecraft_font.ttf" id="6_fyt15"]
+[ext_resource type="Script" uid="uid://djkr5prlx06jf" path="res://Assets/Scenes/Lessons-Problems.gd" id="7_b2tyc"]
+[ext_resource type="Script" uid="uid://ccrgiheamkfw7" path="res://Assets/Scenes/MenuL.gd" id="7_gbnde"]
+[ext_resource type="Script" uid="uid://d2be4s6s7uq2l" path="res://Assets/Scripts/button_learn (2).gd" id="7_ujdny"]
+[ext_resource type="Texture2D" uid="uid://ykx5cchpi3ek" path="res://Assets/Images/Options.png" id="8_q4l40"]
+[ext_resource type="Script" uid="uid://bun3h1yfx2je1" path="res://Assets/Scripts/Settings.gd" id="9_b2tyc"]
+[ext_resource type="Texture2D" uid="uid://bwmt4rewf7y24" path="res://Assets/Images/Profile.png" id="10_gbnde"]
+[ext_resource type="Script" uid="uid://7ik6s3kx6qvy" path="res://Assets/Scenes/BackToMenu.gd" id="10_ujdny"]
+[ext_resource type="Texture2D" uid="uid://dkr4y1sjgpnfx" path="res://Assets/Images/Music_Note.png" id="11_htvf5"]
+[ext_resource type="Script" uid="uid://xagcrutyopkx" path="res://Assets/Scenes/Profile.gd" id="11_q4l40"]
+[ext_resource type="Script" uid="uid://dpndmwaghsd3e" path="res://Assets/Scenes/PP.gd" id="12_jnik8"]
+[ext_resource type="Texture2D" uid="uid://cx1lun6tunscl" path="res://Assets/Images/SAPP.png" id="13_15k3g"]
+[ext_resource type="Texture2D" uid="uid://csbifcu6vbv0u" path="res://Assets/Images/ProfilePictures/PP2.png" id="14_yknj6"]
+[ext_resource type="Texture2D" uid="uid://v1qoj33pilxs" path="res://Assets/Images/ProfilePictures/PP3.png" id="15_nnwby"]
+[ext_resource type="Texture2D" uid="uid://b06m1f7rxoq23" path="res://Assets/Images/ProfilePictures/PP4.png" id="16_kag4d"]
+[ext_resource type="Texture2D" uid="uid://b4c087has3e5j" path="res://Assets/Images/Levels.png" id="17_47f07"]
+[ext_resource type="Texture2D" uid="uid://c416tisq8mtro" path="res://Assets/Images/ProfilePictures/PP5.png" id="17_u3rho"]
+[ext_resource type="Script" uid="uid://brwm0tbviww7" path="res://Assets/Scripts/progress.gd" id="18_7kpy1"]
+[ext_resource type="Texture2D" uid="uid://dq8kibes3mxyo" path="res://Assets/Images/ProfilePictures/PP6.png" id="18_fyt15"]
+[ext_resource type="Script" uid="uid://bu7fcsrvsuv76" path="res://Assets/Scripts/Levels.gd" id="19_glglc"]
+[ext_resource type="Texture2D" uid="uid://cpxah32y1sltx" path="res://Assets/Images/ProfilePictures/PP7.png" id="19_ujdny"]
+[ext_resource type="Script" uid="uid://x6mmne2e6us" path="res://Assets/Scripts/PageSelect.gd" id="20_73h1d"]
+[ext_resource type="Texture2D" uid="uid://cw0rmwgiw75ej" path="res://Assets/Images/ProfilePictures/PP8.png" id="20_q4l40"]
+[ext_resource type="Script" uid="uid://cx51nt57cfwt6" path="res://Assets/Scripts/QuestionLoader.gd" id="21_yr61b"]
+[ext_resource type="Script" uid="uid://dcgmvvajvj8v5" path="res://Assets/Question_Type1.gd" id="22_txfyb"]
+[ext_resource type="Texture2D" uid="uid://c3jyrx62urix7" path="res://Assets/Images/problem.png" id="23_mbynx"]
+[ext_resource type="Script" uid="uid://cil3cr4qfk8mw" path="res://Assets/Scripts/Problem1.gd" id="24_arjjf"]
+[ext_resource type="Script" uid="uid://bi687ef2y6nkx" path="res://Assets/Scenes/BackToProfile.gd" id="25_htvf5"]
+[ext_resource type="Script" uid="uid://xrtgy3hkxu8q" path="res://Assets/Scripts/Type2.gd" id="25_ji0fm"]
+[ext_resource type="Texture2D" uid="uid://cwtvy45bxo0eh" path="res://Assets/Images/Correct.png" id="26_p3rdm"]
+[ext_resource type="Texture2D" uid="uid://ckgw72y2gj0ta" path="res://Assets/Images/incorrect.png" id="27_ptgtk"]
+[ext_resource type="Script" uid="uid://df6fp083riyqy" path="res://Assets/Scenes/Hint_1.gd" id="32_fyt15"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ni7xu"]
+load_path = "res://.godot/imported/Music_Note.png-b18a2733adbec5b7f6d9102fd95c7af0.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8abku"]
+load_path = "res://.godot/imported/PP1.png-7974489e4b3e554ca34c61d4735642db.ctex"
+
+[node name="MAIN" type="Control" unique_id=1280955817]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Main" type="MarginContainer" parent="." unique_id=916756678]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_q6uf0")
+
+[node name="Background" type="MarginContainer" parent="Main" unique_id=1242677241]
+layout_mode = 2
+script = ExtResource("2_l6shh")
+
+[node name="TextureRect" type="TextureRect" parent="Main/Background" unique_id=772777090]
+layout_mode = 2
+texture = ExtResource("3_u4agy")
+expand_mode = 2
+
+[node name="MyCastleTown" type="AudioStreamPlayer" parent="Main/Background" unique_id=1323167006]
+stream = ExtResource("4_ibk6m")
+
+[node name="Start" type="MarginContainer" parent="Main" unique_id=445397091]
+visible = false
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Main/Start" unique_id=268328269]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Main/Start/GridContainer" unique_id=1083266410]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+
+[node name="Label2" type="Label" parent="Main/Start/GridContainer/GridContainer" unique_id=2026378703]
+layout_mode = 2
+text = "
+
+
+
+"
+
+[node name="TextureRect" type="TextureRect" parent="Main/Start/GridContainer/GridContainer" unique_id=1393129376]
+clip_contents = true
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+texture = ExtResource("5_u3rho")
+expand_mode = 3
+
+[node name="GridContainer2" type="GridContainer" parent="Main/Start/GridContainer" unique_id=1274487254]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+
+[node name="Label" type="Label" parent="Main/Start/GridContainer/GridContainer2" unique_id=1077072779]
+layout_mode = 2
+
+[node name="MenuButton" type="MenuButton" parent="Main/Start/GridContainer/GridContainer2" unique_id=684149568]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+tooltip_text = "Start..."
+theme_override_fonts/font = ExtResource("6_fyt15")
+toggle_mode = false
+text = "Start"
+flat = false
+
+[node name="Menu" type="MarginContainer" parent="Main" unique_id=1213467120]
+visible = false
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Main/Menu" unique_id=677451496]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Main/Menu/GridContainer" unique_id=742496150]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+
+[node name="Label2" type="Label" parent="Main/Menu/GridContainer/GridContainer" unique_id=797037155]
+layout_mode = 2
+text = "
+
+
+"
+
+[node name="TextureRect" type="TextureRect" parent="Main/Menu/GridContainer/GridContainer" unique_id=628626915]
+clip_contents = true
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+texture = ExtResource("5_u3rho")
+expand_mode = 3
+
+[node name="Button" type="GridContainer" parent="Main/Menu/GridContainer" unique_id=627700983]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+script = ExtResource("7_gbnde")
+
+[node name="MenuButton2" type="MenuButton" parent="Main/Menu/GridContainer/Button" unique_id=1682181822]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("6_fyt15")
+toggle_mode = false
+text = "Play
+"
+flat = false
+
+[node name="MenuButton" type="MenuButton" parent="Main/Menu/GridContainer/Button" unique_id=690695532]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("6_fyt15")
+toggle_mode = false
+text = "Options
+"
+flat = false
+
+[node name="MenuButton4" type="MenuButton" parent="Main/Menu/GridContainer/Button" unique_id=717825188]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("6_fyt15")
+toggle_mode = false
+text = "Profile
+"
+flat = false
+
+[node name="MenuButton3" type="MenuButton" parent="Main/Menu/GridContainer/Button" unique_id=333084810]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("6_fyt15")
+toggle_mode = false
+text = "Exit"
+flat = false
+
+[node name="SelectScreen" type="MarginContainer" parent="Main" unique_id=1858538192]
+visible = false
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Main/SelectScreen" unique_id=435670902]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Main/SelectScreen/GridContainer" unique_id=1361668425]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+
+[node name="Label2" type="Label" parent="Main/SelectScreen/GridContainer/GridContainer" unique_id=2009687456]
+layout_mode = 2
+text = "
+
+
+"
+
+[node name="TextureRect" type="TextureRect" parent="Main/SelectScreen/GridContainer/GridContainer" unique_id=1008792660]
+clip_contents = true
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+texture = ExtResource("5_u3rho")
+expand_mode = 3
+
+[node name="Label3" type="Label" parent="Main/SelectScreen/GridContainer/GridContainer" unique_id=2047353577]
+layout_mode = 2
+text = "
+
+
+"
+
+[node name="Button" type="GridContainer" parent="Main/SelectScreen/GridContainer" unique_id=366387681]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+columns = 2
+script = ExtResource("7_b2tyc")
+
+[node name="MenuButton2" type="MenuButton" parent="Main/SelectScreen/GridContainer/Button" unique_id=147598924]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("6_fyt15")
+toggle_mode = false
+text = "Lectii
+"
+flat = false
+script = ExtResource("7_ujdny")
+
+[node name="MenuButton" type="MenuButton" parent="Main/SelectScreen/GridContainer/Button" unique_id=553788132]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+theme_override_fonts/font = ExtResource("6_fyt15")
+toggle_mode = false
+text = "Probleme"
+flat = false
+
+[node name="GridContainer2" type="GridContainer" parent="Main/SelectScreen/GridContainer" unique_id=1128399859]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+columns = 2
+script = ExtResource("10_ujdny")
+
+[node name="MenuButton" type="MenuButton" parent="Main/SelectScreen/GridContainer/GridContainer2" unique_id=1584250202]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+toggle_mode = false
+text = "Back to menu"
+flat = false
+
+[node name="Label" type="Label" parent="Main/SelectScreen/GridContainer/GridContainer2" unique_id=80295659]
+layout_mode = 2
+text = "              
+"
+
+[node name="Label2" type="Label" parent="Main/SelectScreen/GridContainer/GridContainer2" unique_id=1229047435]
+layout_mode = 2
+text = "
+"
+
+[node name="Options" type="MarginContainer" parent="Main" unique_id=671001556]
+visible = false
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Main/Options" unique_id=1529385343]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Main/Options/GridContainer" unique_id=321201376]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+
+[node name="Label2" type="Label" parent="Main/Options/GridContainer/GridContainer" unique_id=835443508]
+layout_mode = 2
+text = "
+
+
+"
+
+[node name="TextureRect" type="TextureRect" parent="Main/Options/GridContainer/GridContainer" unique_id=2027496996]
+clip_contents = true
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+texture = ExtResource("8_q4l40")
+expand_mode = 3
+
+[node name="Settings" type="GridContainer" parent="Main/Options/GridContainer" unique_id=2034650860]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+script = ExtResource("9_b2tyc")
+
+[node name="MusicSettings" type="CheckButton" parent="Main/Options/GridContainer/Settings" unique_id=1523114874]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+text = "Music:"
+icon = SubResource("CompressedTexture2D_ni7xu")
+expand_icon = true
+
+[node name="HintsSettings" type="CheckButton" parent="Main/Options/GridContainer/Settings" unique_id=714871090]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+text = "Hints:"
+alignment = 1
+expand_icon = true
+
+[node name="OptionButton" type="OptionButton" parent="Main/Options/GridContainer/Settings" unique_id=842351710]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+selected = 0
+item_count = 2
+popup/item_0/text = "English"
+popup/item_0/id = 0
+popup/item_1/text = "Romanian"
+popup/item_1/id = 1
+
+[node name="GridContainer2" type="GridContainer" parent="Main/Options" unique_id=1358653793]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+columns = 2
+script = ExtResource("10_ujdny")
+
+[node name="MenuButton" type="MenuButton" parent="Main/Options/GridContainer2" unique_id=106530860]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+toggle_mode = false
+text = "Back to menu"
+flat = false
+
+[node name="Label" type="Label" parent="Main/Options/GridContainer2" unique_id=591119947]
+layout_mode = 2
+text = "              
+"
+
+[node name="Label2" type="Label" parent="Main/Options/GridContainer2" unique_id=248973353]
+layout_mode = 2
+text = "
+"
+
+[node name="Profile" type="MarginContainer" parent="Main" unique_id=1545000057]
+visible = false
+layout_mode = 2
+
+[node name="Main" type="GridContainer" parent="Main/Profile" unique_id=1706939480]
+layout_mode = 2
+script = ExtResource("11_q4l40")
+
+[node name="Title" type="GridContainer" parent="Main/Profile/Main" unique_id=1448101476]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+
+[node name="Label2" type="Label" parent="Main/Profile/Main/Title" unique_id=1743884202]
+layout_mode = 2
+text = "
+
+
+"
+
+[node name="TextureRect" type="TextureRect" parent="Main/Profile/Main/Title" unique_id=1727802617]
+clip_contents = true
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+texture = ExtResource("10_gbnde")
+expand_mode = 3
+
+[node name="Buttons" type="GridContainer" parent="Main/Profile/Main" unique_id=984723447]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 0
+columns = 2
+
+[node name="PP_Selector" type="Button" parent="Main/Profile/Main/Buttons" unique_id=205013012]
+custom_minimum_size = Vector2(175, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+text = "Profile Picture:"
+
+[node name="TextureRect" type="TextureRect" parent="Main/Profile/Main/Buttons" unique_id=84885949]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+texture = ExtResource("11_htvf5")
+expand_mode = 2
+script = ExtResource("12_jnik8")
+
+[node name="Buttons2" type="GridContainer" parent="Main/Profile/Main" unique_id=64369614]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+columns = 2
+
+[node name="PP_Selector" type="Button" parent="Main/Profile/Main/Buttons2" unique_id=710191231]
+custom_minimum_size = Vector2(175, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+text = "Username:"
+
+[node name="LineEdit" type="LineEdit" parent="Main/Profile/Main/Buttons2" unique_id=1276366756]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+placeholder_text = "[                         ]"
+alignment = 1
+
+[node name="GridContainer2" type="GridContainer" parent="Main/Profile/Main" unique_id=14915636]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+columns = 2
+script = ExtResource("10_ujdny")
+
+[node name="MenuButton" type="MenuButton" parent="Main/Profile/Main/GridContainer2" unique_id=1985687132]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+toggle_mode = false
+text = "Back to menu"
+flat = false
+
+[node name="Label" type="Label" parent="Main/Profile/Main/GridContainer2" unique_id=1456074000]
+layout_mode = 2
+text = "              
+"
+
+[node name="Label2" type="Label" parent="Main/Profile/Main/GridContainer2" unique_id=1100256788]
+layout_mode = 2
+text = "
+"
+
+[node name="PP_Selector" type="MarginContainer" parent="Main" unique_id=1213384224]
+visible = false
+layout_mode = 2
+
+[node name="Main" type="GridContainer" parent="Main/PP_Selector" unique_id=1025968691]
+layout_mode = 2
+
+[node name="Title" type="GridContainer" parent="Main/PP_Selector/Main" unique_id=303393473]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+
+[node name="Label2" type="Label" parent="Main/PP_Selector/Main/Title" unique_id=1390379820]
+layout_mode = 2
+text = "
+
+
+"
+
+[node name="TextureRect" type="TextureRect" parent="Main/PP_Selector/Main/Title" unique_id=869458834]
+clip_contents = true
+custom_minimum_size = Vector2(300, 65)
+layout_mode = 2
+texture = ExtResource("13_15k3g")
+expand_mode = 3
+
+[node name="Buttons" type="GridContainer" parent="Main/PP_Selector/Main" unique_id=1104385442]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 2
+columns = 4
+
+[node name="PP_Selector" type="Button" parent="Main/PP_Selector/Main/Buttons" unique_id=1200835689]
+custom_minimum_size = Vector2(75, 75)
+layout_direction = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+icon = SubResource("CompressedTexture2D_8abku")
+icon_alignment = 1
+expand_icon = true
+
+[node name="PP_Selector2" type="Button" parent="Main/PP_Selector/Main/Buttons" unique_id=399871417]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+icon = ExtResource("14_yknj6")
+icon_alignment = 1
+expand_icon = true
+
+[node name="PP_Selector3" type="Button" parent="Main/PP_Selector/Main/Buttons" unique_id=895620344]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+icon = ExtResource("15_nnwby")
+icon_alignment = 1
+expand_icon = true
+
+[node name="PP_Selector4" type="Button" parent="Main/PP_Selector/Main/Buttons" unique_id=12828391]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+icon = ExtResource("16_kag4d")
+icon_alignment = 1
+expand_icon = true
+
+[node name="PP_Selector5" type="Button" parent="Main/PP_Selector/Main/Buttons" unique_id=1118145744]
+custom_minimum_size = Vector2(75, 75)
+layout_direction = 1
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+icon = ExtResource("17_u3rho")
+icon_alignment = 1
+expand_icon = true
+
+[node name="PP_Selector6" type="Button" parent="Main/PP_Selector/Main/Buttons" unique_id=911252223]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+icon = ExtResource("18_fyt15")
+icon_alignment = 1
+expand_icon = true
+
+[node name="PP_Selector7" type="Button" parent="Main/PP_Selector/Main/Buttons" unique_id=1595269705]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+icon = ExtResource("19_ujdny")
+icon_alignment = 1
+expand_icon = true
+
+[node name="PP_Selector8" type="Button" parent="Main/PP_Selector/Main/Buttons" unique_id=1510852999]
+custom_minimum_size = Vector2(75, 75)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+icon = ExtResource("20_q4l40")
+icon_alignment = 1
+expand_icon = true
+
+[node name="GridContainer2" type="GridContainer" parent="Main/PP_Selector/Main" unique_id=221091569]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+columns = 2
+script = ExtResource("25_htvf5")
+
+[node name="MenuButton" type="MenuButton" parent="Main/PP_Selector/Main/GridContainer2" unique_id=422040953]
+custom_minimum_size = Vector2(250, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+toggle_mode = false
+text = "Back to Profile Editor"
+flat = false
+
+[node name="Label" type="Label" parent="Main/PP_Selector/Main/GridContainer2" unique_id=1924885410]
+layout_mode = 2
+text = "              
+"
+
+[node name="Label2" type="Label" parent="Main/PP_Selector/Main/GridContainer2" unique_id=1925556333]
+layout_mode = 2
+text = "
+"
+
+[node name="Levels" type="MarginContainer" parent="Main" unique_id=204757566]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Main/Levels" unique_id=215107547]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Main/Levels/GridContainer" unique_id=318127823]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+
+[node name="Label2" type="Label" parent="Main/Levels/GridContainer/GridContainer" unique_id=1245352759]
+layout_mode = 2
+text = "
+
+
+"
+
+[node name="TextureRect" type="TextureRect" parent="Main/Levels/GridContainer/GridContainer" unique_id=2009049557]
+clip_contents = true
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+texture = ExtResource("17_47f07")
+expand_mode = 3
+
+[node name="Label3" type="Label" parent="Main/Levels/GridContainer/GridContainer" unique_id=98924493]
+layout_mode = 2
+text = "
+
+
+"
+
+[node name="Button" type="GridContainer" parent="Main/Levels/GridContainer" unique_id=503303639]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+columns = 2
+
+[node name="Button" type="Button" parent="Main/Levels/GridContainer/Button" unique_id=961603129]
+custom_minimum_size = Vector2(175, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+text = "Cazuri de nedeterminare"
+
+[node name="Button2" type="Button" parent="Main/Levels/GridContainer/Button" unique_id=1911026387]
+custom_minimum_size = Vector2(175, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+text = "Limite remarcabile"
+
+[node name="Button3" type="Button" parent="Main/Levels/GridContainer/Button" unique_id=394951329]
+custom_minimum_size = Vector2(175, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+text = "Calculul nedeterminantilor"
+
+[node name="Button4" type="Button" parent="Main/Levels/GridContainer/Button" unique_id=1187441256]
+custom_minimum_size = Vector2(175, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+text = "Sisteme de ecuatii liniare"
+
+[node name="Button5" type="Button" parent="Main/Levels/GridContainer/Button" unique_id=465117028]
+custom_minimum_size = Vector2(175, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+text = "Determinanti"
+
+[node name="Progress" type="GridContainer" parent="Main/Levels/GridContainer" unique_id=158459295]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+script = ExtResource("18_7kpy1")
+
+[node name="ProgressBar" type="ProgressBar" parent="Main/Levels/GridContainer/Progress" unique_id=1443104527]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+rounded = true
+
+[node name="Label" type="Label" parent="Main/Levels/GridContainer/Progress" unique_id=189451060]
+layout_mode = 2
+
+[node name="Timer" type="Timer" parent="Main/Levels/GridContainer/Progress" unique_id=425515894]
+autostart = true
+
+[node name="GridContainer2" type="GridContainer" parent="Main/Levels" unique_id=1129583740]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+columns = 2
+script = ExtResource("10_ujdny")
+
+[node name="MenuButton" type="MenuButton" parent="Main/Levels/GridContainer2" unique_id=1261362727]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+toggle_mode = false
+text = "Back to menu"
+flat = false
+
+[node name="Label" type="Label" parent="Main/Levels/GridContainer2" unique_id=891177099]
+layout_mode = 2
+text = "              
+"
+
+[node name="Label2" type="Label" parent="Main/Levels/GridContainer2" unique_id=1989379025]
+layout_mode = 2
+text = "
+"
+
+[node name="LevelSelector" type="MarginContainer" parent="Main" unique_id=82260089]
+visible = false
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Main/LevelSelector" unique_id=1804138864]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Main/LevelSelector/GridContainer" unique_id=81089482]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+
+[node name="Label2" type="Label" parent="Main/LevelSelector/GridContainer/GridContainer" unique_id=469797759]
+layout_mode = 2
+text = "
+
+"
+
+[node name="TextureRect" type="TextureRect" parent="Main/LevelSelector/GridContainer/GridContainer" unique_id=1264910336]
+clip_contents = true
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+texture = ExtResource("17_47f07")
+expand_mode = 3
+
+[node name="Label3" type="Label" parent="Main/LevelSelector/GridContainer/GridContainer" unique_id=283909306]
+layout_mode = 2
+text = "
+"
+
+[node name="Button" type="GridContainer" parent="Main/LevelSelector/GridContainer" unique_id=662325513]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+columns = 2
+script = ExtResource("19_glglc")
+
+[node name="Button" type="Button" parent="Main/LevelSelector/GridContainer/Button" unique_id=1137130277]
+custom_minimum_size = Vector2(175, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+text = "Level"
+
+[node name="Button2" type="Button" parent="Main/LevelSelector/GridContainer/Button" unique_id=860988193]
+custom_minimum_size = Vector2(175, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+text = "Level"
+metadata/Level = 0
+
+[node name="Button3" type="Button" parent="Main/LevelSelector/GridContainer/Button" unique_id=705381303]
+custom_minimum_size = Vector2(175, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+text = "Level"
+metadata/Level = 0
+
+[node name="Button4" type="Button" parent="Main/LevelSelector/GridContainer/Button" unique_id=621700162]
+custom_minimum_size = Vector2(175, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+text = "Level"
+metadata/Level = 0
+
+[node name="Button5" type="Button" parent="Main/LevelSelector/GridContainer/Button" unique_id=1795068551]
+custom_minimum_size = Vector2(175, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+text = "Level"
+metadata/Level = 0
+
+[node name="Button6" type="Button" parent="Main/LevelSelector/GridContainer/Button" unique_id=1208283095]
+custom_minimum_size = Vector2(175, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+text = "Level"
+metadata/Level = 0
+
+[node name="Button7" type="Button" parent="Main/LevelSelector/GridContainer/Button" unique_id=1248300629]
+custom_minimum_size = Vector2(175, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+text = "Level"
+metadata/Level = 0
+
+[node name="Button8" type="Button" parent="Main/LevelSelector/GridContainer/Button" unique_id=1353606823]
+custom_minimum_size = Vector2(175, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+text = "Level"
+metadata/Level = 0
+
+[node name="Label" type="Label" parent="Main/LevelSelector/GridContainer/Button" unique_id=1772984859]
+layout_mode = 2
+
+[node name="Switch" type="GridContainer" parent="Main/LevelSelector/GridContainer" unique_id=1678960812]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+columns = 3
+script = ExtResource("20_73h1d")
+
+[node name="Back" type="Button" parent="Main/LevelSelector/GridContainer/Switch" unique_id=1326899322]
+custom_minimum_size = Vector2(175, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+text = "Back"
+
+[node name="Label" type="Label" parent="Main/LevelSelector/GridContainer/Switch" unique_id=1468526975]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "                                   "
+
+[node name="Next" type="Button" parent="Main/LevelSelector/GridContainer/Switch" unique_id=1023175820]
+custom_minimum_size = Vector2(175, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+text = "Next"
+
+[node name="Progress" type="GridContainer" parent="Main/LevelSelector/GridContainer" unique_id=1229620972]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+script = ExtResource("18_7kpy1")
+
+[node name="ProgressBar" type="ProgressBar" parent="Main/LevelSelector/GridContainer/Progress" unique_id=167884504]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+rounded = true
+
+[node name="Label" type="Label" parent="Main/LevelSelector/GridContainer/Progress" unique_id=2047346736]
+layout_mode = 2
+
+[node name="Timer" type="Timer" parent="Main/LevelSelector/GridContainer/Progress" unique_id=1512504472]
+autostart = true
+
+[node name="GridContainer2" type="GridContainer" parent="Main/LevelSelector" unique_id=490445569]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+columns = 2
+script = ExtResource("10_ujdny")
+
+[node name="MenuButton" type="MenuButton" parent="Main/LevelSelector/GridContainer2" unique_id=605054804]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+toggle_mode = false
+text = "Back to menu"
+flat = false
+
+[node name="Label" type="Label" parent="Main/LevelSelector/GridContainer2" unique_id=564508410]
+layout_mode = 2
+text = "              
+"
+
+[node name="Label2" type="Label" parent="Main/LevelSelector/GridContainer2" unique_id=1214363584]
+layout_mode = 2
+text = "
+"
+
+[node name="Level" type="MarginContainer" parent="Main" unique_id=1920535206]
+visible = false
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Main/Level" unique_id=2072183000]
+layout_mode = 2
+script = ExtResource("21_yr61b")
+
+[node name="GridContainer" type="GridContainer" parent="Main/Level/GridContainer" unique_id=613756849]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+script = ExtResource("22_txfyb")
+
+[node name="Label2" type="Label" parent="Main/Level/GridContainer/GridContainer" unique_id=99118056]
+layout_mode = 2
+text = "
+
+"
+
+[node name="TextureRect" type="TextureRect" parent="Main/Level/GridContainer/GridContainer" unique_id=417380043]
+clip_contents = true
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+texture = ExtResource("23_mbynx")
+expand_mode = 3
+
+[node name="Label3" type="Label" parent="Main/Level/GridContainer/GridContainer" unique_id=307555682]
+layout_mode = 2
+text = "
+"
+
+[node name="Question" type="Label" parent="Main/Level/GridContainer/GridContainer" unique_id=319322886]
+layout_mode = 2
+text = "Question"
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="Main/Level/GridContainer/GridContainer" unique_id=455395552]
+layout_mode = 2
+
+[node name="Type1" type="GridContainer" parent="Main/Level/GridContainer" unique_id=785421598]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+columns = 2
+script = ExtResource("24_arjjf")
+
+[node name="Button" type="Button" parent="Main/Level/GridContainer/Type1" unique_id=944044250]
+custom_minimum_size = Vector2(175, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 10
+size_flags_stretch_ratio = 0.0
+theme_override_fonts/font = ExtResource("6_fyt15")
+text = "Level"
+
+[node name="Button2" type="Button" parent="Main/Level/GridContainer/Type1" unique_id=1794862146]
+custom_minimum_size = Vector2(175, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+text = "Level"
+metadata/Level = 0
+
+[node name="Button3" type="Button" parent="Main/Level/GridContainer/Type1" unique_id=1073424683]
+custom_minimum_size = Vector2(175, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+text = "Level"
+metadata/Level = 0
+
+[node name="Button4" type="Button" parent="Main/Level/GridContainer/Type1" unique_id=1218289508]
+custom_minimum_size = Vector2(175, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+text = "Level"
+metadata/Level = 0
+
+[node name="Label" type="Label" parent="Main/Level/GridContainer/Type1" unique_id=1466361416]
+layout_mode = 2
+
+[node name="Type2" type="GridContainer" parent="Main/Level/GridContainer" unique_id=945838334]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+columns = 2
+script = ExtResource("25_ji0fm")
+
+[node name="Label" type="Label" parent="Main/Level/GridContainer/Type2" unique_id=440794652]
+layout_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="Main/Level/GridContainer/Type2" unique_id=1253650483]
+custom_minimum_size = Vector2(350, 50)
+layout_mode = 2
+placeholder_text = "Enter your answer here..."
+
+[node name="Button9" type="GridContainer" parent="Main/Level/GridContainer" unique_id=1372359921]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+columns = 3
+
+[node name="Label" type="Label" parent="Main/Level/GridContainer/Button9" unique_id=879975391]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "                                   "
+
+[node name="GridContainer2" type="GridContainer" parent="Main/Level" unique_id=1940672912]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+columns = 2
+script = ExtResource("10_ujdny")
+
+[node name="MenuButton" type="MenuButton" parent="Main/Level/GridContainer2" unique_id=237080041]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+toggle_mode = false
+text = "Back to menu"
+flat = false
+
+[node name="Label" type="Label" parent="Main/Level/GridContainer2" unique_id=926426702]
+layout_mode = 2
+text = "              
+"
+
+[node name="Label2" type="Label" parent="Main/Level/GridContainer2" unique_id=226673240]
+layout_mode = 2
+text = "
+"
+
+[node name="Level_Conclusion" type="MarginContainer" parent="Main" unique_id=708015051]
+visible = false
+layout_mode = 2
+
+[node name="Correct" type="GridContainer" parent="Main/Level_Conclusion" unique_id=152982623]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="GridContainer" type="GridContainer" parent="Main/Level_Conclusion/Correct" unique_id=832501336]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="GridContainer" type="GridContainer" parent="Main/Level_Conclusion/Correct/GridContainer" unique_id=523111647]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+
+[node name="Label2" type="Label" parent="Main/Level_Conclusion/Correct/GridContainer/GridContainer" unique_id=460926612]
+layout_mode = 2
+text = "
+
+
+
+
+
+
+"
+
+[node name="TextureRect" type="TextureRect" parent="Main/Level_Conclusion/Correct/GridContainer/GridContainer" unique_id=938885332]
+clip_contents = true
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+texture = ExtResource("26_p3rdm")
+expand_mode = 3
+
+[node name="Label3" type="Label" parent="Main/Level_Conclusion/Correct/GridContainer/GridContainer" unique_id=736116454]
+layout_mode = 2
+text = "
+"
+
+[node name="GridContainer2" type="GridContainer" parent="Main/Level_Conclusion/Correct" unique_id=1985444160]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+
+[node name="MenuButton" type="MenuButton" parent="Main/Level_Conclusion/Correct/GridContainer2" unique_id=99253246]
+custom_minimum_size = Vector2(250, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+toggle_mode = false
+text = "Back to level selector"
+flat = false
+
+[node name="Label2" type="Label" parent="Main/Level_Conclusion/Correct/GridContainer2" unique_id=474242643]
+layout_mode = 2
+text = "
+
+"
+
+[node name="Incorrect" type="GridContainer" parent="Main/Level_Conclusion" unique_id=93295039]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="GridContainer" type="GridContainer" parent="Main/Level_Conclusion/Incorrect" unique_id=799581670]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="GridContainer" type="GridContainer" parent="Main/Level_Conclusion/Incorrect/GridContainer" unique_id=599673307]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 2
+
+[node name="Label2" type="Label" parent="Main/Level_Conclusion/Incorrect/GridContainer/GridContainer" unique_id=746043699]
+layout_mode = 2
+text = "
+
+
+
+
+
+
+"
+
+[node name="TextureRect" type="TextureRect" parent="Main/Level_Conclusion/Incorrect/GridContainer/GridContainer" unique_id=1275707554]
+clip_contents = true
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+texture = ExtResource("27_ptgtk")
+expand_mode = 3
+
+[node name="Label3" type="Label" parent="Main/Level_Conclusion/Incorrect/GridContainer/GridContainer" unique_id=92463170]
+layout_mode = 2
+text = "
+"
+
+[node name="GridContainer2" type="GridContainer" parent="Main/Level_Conclusion/Incorrect" unique_id=957028405]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+script = ExtResource("32_fyt15")
+
+[node name="MenuButton" type="MenuButton" parent="Main/Level_Conclusion/Incorrect/GridContainer2" unique_id=915113427]
+custom_minimum_size = Vector2(250, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_fyt15")
+toggle_mode = false
+text = "Back to problem
+"
+flat = false
+
+[node name="Label2" type="Label" parent="Main/Level_Conclusion/Incorrect/GridContainer2" unique_id=734409131]
+layout_mode = 2
+text = "
+
+"
+
+[connection signal="pressed" from="Main/Start/GridContainer/GridContainer2/MenuButton" to="Main" method="_on_menu_button_pressed"]
+[connection signal="pressed" from="Main/Menu/GridContainer/Button/MenuButton2" to="Main" method="menu_SS"]
+[connection signal="pressed" from="Main/Menu/GridContainer/Button/MenuButton" to="Main" method="menu_options"]
+[connection signal="pressed" from="Main/Menu/GridContainer/Button/MenuButton4" to="Main" method="menu_profile"]
+[connection signal="pressed" from="Main/Menu/GridContainer/Button/MenuButton3" to="Main" method="escape"]
+[connection signal="pressed" from="Main/SelectScreen/GridContainer/Button/MenuButton2" to="Main/SelectScreen/GridContainer/Button/MenuButton2" method="_button_pressed"]
+[connection signal="pressed" from="Main/SelectScreen/GridContainer/Button/MenuButton" to="Main" method="menu_levels"]
+[connection signal="pressed" from="Main/SelectScreen/GridContainer/Button/MenuButton" to="Main" method="SS_levels"]
+[connection signal="pressed" from="Main/SelectScreen/GridContainer/GridContainer2/MenuButton" to="Main" method="menu_SS"]
+[connection signal="toggled" from="Main/Options/GridContainer/Settings/MusicSettings" to="Main/Background" method="music_update"]
+[connection signal="toggled" from="Main/Options/GridContainer/Settings/HintsSettings" to="Main/Options/GridContainer/Settings" method="HintUpdate"]
+[connection signal="item_selected" from="Main/Options/GridContainer/Settings/OptionButton" to="Main/Options/GridContainer/Settings" method="LanguageChange"]
+[connection signal="item_selected" from="Main/Options/GridContainer/Settings/OptionButton" to="Main/Options/GridContainer2" method="LanguageSelect"]
+[connection signal="item_selected" from="Main/Options/GridContainer/Settings/OptionButton" to="Main/Profile/Main/GridContainer2" method="LanguageSelect"]
+[connection signal="pressed" from="Main/Options/GridContainer2/MenuButton" to="Main" method="back_button"]
+[connection signal="pressed" from="Main/Profile/Main/Buttons/PP_Selector" to="Main" method="Profile_PP"]
+[connection signal="text_submitted" from="Main/Profile/Main/Buttons2/LineEdit" to="Main/Profile/Main/Buttons/TextureRect" method="Username_Update"]
+[connection signal="pressed" from="Main/Profile/Main/GridContainer2/MenuButton" to="Main" method="back_button"]
+[connection signal="pressed" from="Main/PP_Selector/Main/Buttons/PP_Selector" to="Main" method="Profile_PP"]
+[connection signal="pressed" from="Main/PP_Selector/Main/Buttons/PP_Selector" to="Main/Profile/Main/Buttons/TextureRect" method="PP_Update" binds= [1]]
+[connection signal="pressed" from="Main/PP_Selector/Main/Buttons/PP_Selector2" to="Main" method="Profile_PP"]
+[connection signal="pressed" from="Main/PP_Selector/Main/Buttons/PP_Selector2" to="Main/Profile/Main/Buttons/TextureRect" method="PP_Update" binds= [2]]
+[connection signal="pressed" from="Main/PP_Selector/Main/Buttons/PP_Selector3" to="Main" method="Profile_PP"]
+[connection signal="pressed" from="Main/PP_Selector/Main/Buttons/PP_Selector3" to="Main/Profile/Main/Buttons/TextureRect" method="PP_Update" binds= [3]]
+[connection signal="pressed" from="Main/PP_Selector/Main/Buttons/PP_Selector4" to="Main" method="Profile_PP"]
+[connection signal="pressed" from="Main/PP_Selector/Main/Buttons/PP_Selector4" to="Main/Profile/Main/Buttons/TextureRect" method="PP_Update" binds= [4]]
+[connection signal="pressed" from="Main/PP_Selector/Main/Buttons/PP_Selector5" to="Main" method="Profile_PP"]
+[connection signal="pressed" from="Main/PP_Selector/Main/Buttons/PP_Selector5" to="Main/Profile/Main/Buttons/TextureRect" method="PP_Update" binds= [5]]
+[connection signal="pressed" from="Main/PP_Selector/Main/Buttons/PP_Selector6" to="Main" method="Profile_PP"]
+[connection signal="pressed" from="Main/PP_Selector/Main/Buttons/PP_Selector6" to="Main/Profile/Main/Buttons/TextureRect" method="PP_Update" binds= [6]]
+[connection signal="pressed" from="Main/PP_Selector/Main/Buttons/PP_Selector7" to="Main" method="Profile_PP"]
+[connection signal="pressed" from="Main/PP_Selector/Main/Buttons/PP_Selector7" to="Main/Profile/Main/Buttons/TextureRect" method="PP_Update" binds= [7]]
+[connection signal="pressed" from="Main/PP_Selector/Main/Buttons/PP_Selector8" to="Main" method="Profile_PP"]
+[connection signal="pressed" from="Main/PP_Selector/Main/Buttons/PP_Selector8" to="Main/Profile/Main/Buttons/TextureRect" method="PP_Update" binds= [8]]
+[connection signal="pressed" from="Main/PP_Selector/Main/GridContainer2/MenuButton" to="Main" method="Profile_PP"]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button" to="Main" method="level_levelselector"]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button" to="Main/LevelSelector/GridContainer/Button" method="level_enter" binds= [0]]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button" to="Main/LevelSelector/GridContainer/Switch" method="pageselect" binds= [0]]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button" to="Main/Level/GridContainer" method="class_selector" binds= [0]]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button" to="Main/Level/GridContainer/GridContainer" method="ClassSelect" binds= [0]]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button" to="Main/Level/GridContainer/Type1" method="class_selector" binds= [0]]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button2" to="Main" method="level_levelselector"]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button2" to="Main/LevelSelector/GridContainer/Button" method="class_selected" binds= [0]]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button2" to="Main/LevelSelector/GridContainer/Button" method="level_enter" binds= [0]]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button2" to="Main/Level/GridContainer" method="class_selector" binds= [1]]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button2" to="Main/Level/GridContainer/GridContainer" method="ClassSelect" binds= [1]]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button2" to="Main/Level/GridContainer/Type1" method="class_selector" binds= [1]]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button3" to="Main" method="level_levelselector"]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button3" to="Main/LevelSelector/GridContainer/Button" method="class_selected" binds= [2]]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button3" to="Main/LevelSelector/GridContainer/Button" method="level_enter" binds= [0]]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button3" to="Main/Level/GridContainer" method="class_selector" binds= [2]]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button3" to="Main/Level/GridContainer/GridContainer" method="ClassSelect" binds= [2]]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button3" to="Main/Level/GridContainer/Type1" method="class_selector" binds= [2]]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button4" to="Main" method="level_levelselector"]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button4" to="Main/LevelSelector/GridContainer/Button" method="class_selected" binds= [3]]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button4" to="Main/LevelSelector/GridContainer/Button" method="level_enter" binds= [0]]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button4" to="Main/Level/GridContainer" method="class_selector" binds= [3]]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button4" to="Main/Level/GridContainer/GridContainer" method="ClassSelect" binds= [3]]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button4" to="Main/Level/GridContainer/Type1" method="class_selector" binds= [3]]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button5" to="Main" method="level_levelselector"]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button5" to="Main/LevelSelector/GridContainer/Button" method="class_selected" binds= [4]]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button5" to="Main/LevelSelector/GridContainer/Button" method="level_enter" binds= [0]]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button5" to="Main/Level/GridContainer" method="class_selector" binds= [4]]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button5" to="Main/Level/GridContainer/GridContainer" method="ClassSelect" binds= [4]]
+[connection signal="pressed" from="Main/Levels/GridContainer/Button/Button5" to="Main/Level/GridContainer/Type1" method="class_selector" binds= [4]]
+[connection signal="timeout" from="Main/Levels/GridContainer/Progress/Timer" to="Main/Levels/GridContainer/Progress" method="print_stats"]
+[connection signal="pressed" from="Main/Levels/GridContainer2/MenuButton" to="Main" method="back_button"]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button" to="Main" method="enterlevel"]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button" to="Main/Level_Conclusion/Incorrect/GridContainer2" method="Update"]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button" to="Main/Level/GridContainer" method="Load_Question" binds= [1]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button" to="Main/Level/GridContainer/GridContainer" method="LoadQuestion" binds= [1]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button" to="Main/Level/GridContainer/Type1" method="level_enter" binds= [1]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button" to="Main/Level/GridContainer/Type2" method="level_enter" binds= [1]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button2" to="Main" method="enterlevel"]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button2" to="Main/Level_Conclusion/Incorrect/GridContainer2" method="Update"]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button2" to="Main/Level/GridContainer" method="Load_Question" binds= [2]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button2" to="Main/Level/GridContainer/GridContainer" method="LoadQuestion" binds= [2]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button2" to="Main/Level/GridContainer/Type1" method="level_enter" binds= [2]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button2" to="Main/Level/GridContainer/Type2" method="level_enter" binds= [2]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button3" to="Main" method="enterlevel"]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button3" to="Main/Level_Conclusion/Incorrect/GridContainer2" method="Update"]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button3" to="Main/Level/GridContainer" method="Load_Question" binds= [3]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button3" to="Main/Level/GridContainer/GridContainer" method="LoadQuestion" binds= [3]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button3" to="Main/Level/GridContainer/Type1" method="level_enter" binds= [3]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button3" to="Main/Level/GridContainer/Type2" method="level_enter" binds= [3]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button4" to="Main" method="enterlevel"]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button4" to="Main/Level_Conclusion/Incorrect/GridContainer2" method="Update"]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button4" to="Main/Level/GridContainer" method="Load_Question" binds= [4]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button4" to="Main/Level/GridContainer/GridContainer" method="LoadQuestion" binds= [4]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button4" to="Main/Level/GridContainer/Type1" method="level_enter" binds= [4]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button4" to="Main/Level/GridContainer/Type2" method="level_enter" binds= [4]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button5" to="Main" method="enterlevel"]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button5" to="Main/Level_Conclusion/Incorrect/GridContainer2" method="Update"]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button5" to="Main/Level/GridContainer" method="Load_Question" binds= [5]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button5" to="Main/Level/GridContainer/GridContainer" method="LoadQuestion" binds= [5]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button5" to="Main/Level/GridContainer/Type1" method="level_enter" binds= [5]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button5" to="Main/Level/GridContainer/Type2" method="level_enter" binds= [5]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button6" to="Main" method="enterlevel"]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button6" to="Main/Level_Conclusion/Incorrect/GridContainer2" method="Update"]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button6" to="Main/Level/GridContainer" method="Load_Question" binds= [6]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button6" to="Main/Level/GridContainer/GridContainer" method="LoadQuestion" binds= [6]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button6" to="Main/Level/GridContainer/Type1" method="level_enter" binds= [6]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button6" to="Main/Level/GridContainer/Type2" method="level_enter" binds= [6]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button7" to="Main" method="enterlevel"]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button7" to="Main/Level_Conclusion/Incorrect/GridContainer2" method="Update"]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button7" to="Main/Level/GridContainer" method="Load_Question" binds= [7]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button7" to="Main/Level/GridContainer/GridContainer" method="LoadQuestion" binds= [7]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button7" to="Main/Level/GridContainer/Type1" method="level_enter" binds= [7]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button7" to="Main/Level/GridContainer/Type2" method="level_enter" binds= [7]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button8" to="Main" method="enterlevel"]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button8" to="Main/Level_Conclusion/Incorrect/GridContainer2" method="Update"]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button8" to="Main/Level/GridContainer" method="Load_Question" binds= [8]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button8" to="Main/Level/GridContainer/GridContainer" method="LoadQuestion" binds= [8]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button8" to="Main/Level/GridContainer/Type1" method="level_enter" binds= [8]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Button/Button8" to="Main/Level/GridContainer/Type2" method="level_enter" binds= [8]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Switch/Back" to="Main/LevelSelector/GridContainer/Button" method="pagechange" binds= [-1]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Switch/Back" to="Main/LevelSelector/GridContainer/Switch" method="changepage" binds= [-1]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Switch/Next" to="Main/LevelSelector/GridContainer/Button" method="pagechange" binds= [1]]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer/Switch/Next" to="Main/LevelSelector/GridContainer/Switch" method="changepage" binds= [1]]
+[connection signal="timeout" from="Main/LevelSelector/GridContainer/Progress/Timer" to="Main/LevelSelector/GridContainer/Progress" method="_on_timer_timeout"]
+[connection signal="pressed" from="Main/LevelSelector/GridContainer2/MenuButton" to="Main" method="level_levelselector"]
+[connection signal="pressed" from="Main/Level/GridContainer/Type1/Button" to="Main/Level/GridContainer/Type1" method="Type1Answer" binds= [1]]
+[connection signal="pressed" from="Main/Level/GridContainer/Type1/Button2" to="Main/Level/GridContainer/Type1" method="Type1Answer" binds= [2]]
+[connection signal="pressed" from="Main/Level/GridContainer/Type1/Button3" to="Main/Level/GridContainer/Type1" method="Type1Answer" binds= [3]]
+[connection signal="pressed" from="Main/Level/GridContainer/Type1/Button4" to="Main/Level/GridContainer/Type1" method="Type1Answer" binds= [4]]
+[connection signal="text_submitted" from="Main/Level/GridContainer/Type2/LineEdit" to="Main/Level/GridContainer/Type1" method="Type2Answer"]
+[connection signal="pressed" from="Main/Level/GridContainer2/MenuButton" to="Main" method="back_button"]
+[connection signal="pressed" from="Main/Level_Conclusion/Correct/GridContainer2/MenuButton" to="Main" method="Answer_Levelselector"]
+[connection signal="pressed" from="Main/Level_Conclusion/Correct/GridContainer2/MenuButton" to="Main/Levels/GridContainer/Progress" method="answer_question"]
+[connection signal="pressed" from="Main/Level_Conclusion/Correct/GridContainer2/MenuButton" to="Main/LevelSelector/GridContainer/Progress" method="print_stats"]
+[connection signal="pressed" from="Main/Level_Conclusion/Incorrect/GridContainer2/MenuButton" to="Main" method="Answer_Incorrect"]
