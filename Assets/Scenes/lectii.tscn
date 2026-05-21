@@ -1,0 +1,119 @@
+[gd_scene format=3 uid="uid://r2yyto68nrsx"]
+
+[ext_resource type="Texture2D" uid="uid://dgq0654hcf0tg" path="res://Assets/Images/Background.jpg" id="1_wif3w"]
+[ext_resource type="Script" uid="uid://cxd11gs1hoxbe" path="res://Assets/Scripts/button.gd" id="2_s4yxx"]
+[ext_resource type="Script" uid="uid://dps0jf1degjsc" path="res://Assets/Scripts/l_r_.gd" id="3_gs4wm"]
+[ext_resource type="Script" uid="uid://cp35ao5lf1wns" path="res://Assets/Scripts/c_ne_.gd" id="4_34ejt"]
+[ext_resource type="FontFile" uid="uid://b34dyndevdd1o" path="res://Assets/Fonts/minecraft_font.ttf" id="5_ua3vb"]
+[ext_resource type="Script" uid="uid://b7vuldpqetwyx" path="res://Assets/Scenes/Back_Menu.gd" id="6_gs4wm"]
+
+[node name="Lectii" type="Control" unique_id=685940514]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=508759285]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_wif3w")
+expand_mode = 2
+
+[node name="GridContainer2" type="GridContainer" parent="TextureRect" unique_id=1148584735]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -166.0
+offset_top = -95.5
+offset_right = 166.0
+offset_bottom = 95.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="C_N_" type="Button" parent="TextureRect/GridContainer2" unique_id=1387425702]
+layout_mode = 2
+theme_override_font_sizes/font_size = 27
+text = "Cazuri de nedeterminare"
+script = ExtResource("2_s4yxx")
+
+[node name="L_R_" type="Button" parent="TextureRect/GridContainer2" unique_id=1720769430]
+layout_mode = 2
+theme_override_font_sizes/font_size = 27
+button_mask = 7
+text = "Limite remarcabile"
+script = ExtResource("3_gs4wm")
+
+[node name="C_NE_" type="Button" parent="TextureRect/GridContainer2" unique_id=92163998]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+keep_pressed_outside = true
+text = "Calculul nedeterminarilor"
+script = ExtResource("4_34ejt")
+
+[node name="C_NE_2" type="Button" parent="TextureRect/GridContainer2" unique_id=2081048278]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+keep_pressed_outside = true
+text = "Sisteme de ecuatii liniare"
+script = ExtResource("4_34ejt")
+
+[node name="C_NE_3" type="Button" parent="TextureRect/GridContainer2" unique_id=1833869581]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+keep_pressed_outside = true
+text = "Determinanti"
+script = ExtResource("4_34ejt")
+
+[node name="GridContainer2" type="GridContainer" parent="." unique_id=998937421]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -213.0
+offset_top = -103.0
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_horizontal = 8
+size_flags_vertical = 8
+columns = 2
+
+[node name="MenuButton" type="MenuButton" parent="GridContainer2" unique_id=331720316]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_ua3vb")
+toggle_mode = false
+text = "Inapoi la meniu"
+flat = false
+script = ExtResource("6_gs4wm")
+
+[node name="Label" type="Label" parent="GridContainer2" unique_id=819043372]
+layout_mode = 2
+text = "              
+"
+
+[node name="Label2" type="Label" parent="GridContainer2" unique_id=1193764200]
+layout_mode = 2
+text = "
+"
+
+[connection signal="pressed" from="TextureRect/GridContainer2/C_N_" to="TextureRect/GridContainer2/C_N_" method="_button_pressed"]
+[connection signal="pressed" from="TextureRect/GridContainer2/L_R_" to="TextureRect/GridContainer2/L_R_" method="_button_pressed"]
+[connection signal="pressed" from="TextureRect/GridContainer2/C_NE_" to="TextureRect/GridContainer2/C_NE_" method="_button_pressed"]
+[connection signal="pressed" from="TextureRect/GridContainer2/C_NE_2" to="TextureRect/GridContainer2/C_NE_2" method="Sistemecuatii"]
+[connection signal="pressed" from="TextureRect/GridContainer2/C_NE_3" to="TextureRect/GridContainer2/C_NE_3" method="_on_pressedaa"]
+[connection signal="pressed" from="GridContainer2/MenuButton" to="GridContainer2/MenuButton" method="_on_pressed"]
